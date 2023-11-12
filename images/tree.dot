@@ -1,0 +1,37 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="seq 6 <= 11.375\nsamples = 46\nvalue = [23, 23]\nclass = Female", fillcolor="#ffffff"] ;
+1 [label="seq 1 <= 1.25\nsamples = 36\nvalue = [13, 23]\nclass = Male", fillcolor="#a9d4f4"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="samples = 4\nvalue = [4, 0]\nclass = Female", fillcolor="#e58139"] ;
+1 -> 2 ;
+3 [label="seq 2 <= 3.125\nsamples = 32\nvalue = [9, 23]\nclass = Male", fillcolor="#86c3ef"] ;
+1 -> 3 ;
+4 [label="seq 4 <= 2.75\nsamples = 5\nvalue = [4, 1]\nclass = Female", fillcolor="#eca06a"] ;
+3 -> 4 ;
+5 [label="samples = 1\nvalue = [0, 1]\nclass = Male", fillcolor="#399de5"] ;
+4 -> 5 ;
+6 [label="samples = 4\nvalue = [4, 0]\nclass = Female", fillcolor="#e58139"] ;
+4 -> 6 ;
+7 [label="seq 1 <= 13.5\nsamples = 27\nvalue = [5, 22]\nclass = Male", fillcolor="#66b3eb"] ;
+3 -> 7 ;
+8 [label="seq 1 <= 4.375\nsamples = 25\nvalue = [3, 22]\nclass = Male", fillcolor="#54aae9"] ;
+7 -> 8 ;
+9 [label="samples = 15\nvalue = [0, 15]\nclass = Male", fillcolor="#399de5"] ;
+8 -> 9 ;
+10 [label="seq 1 <= 5.625\nsamples = 10\nvalue = [3, 7]\nclass = Male", fillcolor="#8ec7f0"] ;
+8 -> 10 ;
+11 [label="samples = 2\nvalue = [2, 0]\nclass = Female", fillcolor="#e58139"] ;
+10 -> 11 ;
+12 [label="seq 6 <= 5.0\nsamples = 8\nvalue = [1, 7]\nclass = Male", fillcolor="#55abe9"] ;
+10 -> 12 ;
+13 [label="samples = 1\nvalue = [1, 0]\nclass = Female", fillcolor="#e58139"] ;
+12 -> 13 ;
+14 [label="samples = 7\nvalue = [0, 7]\nclass = Male", fillcolor="#399de5"] ;
+12 -> 14 ;
+15 [label="samples = 2\nvalue = [2, 0]\nclass = Female", fillcolor="#e58139"] ;
+7 -> 15 ;
+16 [label="samples = 10\nvalue = [10, 0]\nclass = Female", fillcolor="#e58139"] ;
+0 -> 16 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
